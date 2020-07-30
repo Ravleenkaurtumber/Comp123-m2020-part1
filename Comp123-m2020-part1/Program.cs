@@ -14,9 +14,15 @@ namespace Comp123_m2020_part1
         [STAThread]
         static void Main()
         {
+            //Step1 -declare my form
+            HelloWorldForm helloWorldForm;
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HelloWorldForm());
+            //Step 2-Instantiate Form
+             helloWorldForm = new HelloWorldForm();
+             //Step 3- pass reference to the application
+            Application.Run(helloWorldForm);
         }
     }
 }
